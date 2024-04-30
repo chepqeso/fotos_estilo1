@@ -1,0 +1,41 @@
+body{
+    background: black;
+}
+.gallery{
+    width: 100%;
+    height: 620px;
+    display: flex;
+    flex-direction: row;
+}
+header{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+}
+.foto{
+    flex: 1;
+    height: 100%;
+}
+.foto:nth-child(1){
+    background-image: url("batma1.png");
+}
+.foto:nth-child(2){
+    background-image: url("batman2.jpeg");
+}
+.foto:nth-child(3){
+    background-image: url('batman3.jpeg');
+}
+.foto:nth-child(4){
+    background-image: url('batman4.jpeg');
+}
+.foto:nth-child(5){
+    background-image: url('batman5.jpeg');
+}
+.foto{
+    background-position: center;
+    background-size: cover;  
+    transition: flex 0.8s ease; 
+}
+.foto:hover{
+    flex: 5;
+}
